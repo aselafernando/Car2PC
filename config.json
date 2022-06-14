@@ -21,26 +21,6 @@
         "defaultValue": false
       },
       {
-        "name": "REPEAT_ON",
-        "type": "string",
-        "defaultValue": ""
-      },
-      {
-        "name": "REPEAT_OFF",
-        "type": "string",
-        "defaultValue": ""
-      },
-      {
-        "name": "SHUFFLE_ON",
-        "type": "string",
-        "defaultValue": ""
-      },
-      {
-        "name": "SHUFFLE_OFF",
-        "type": "string",
-        "defaultValue": ""
-      },
-      {
         "name": "FF_ON",
         "type": "string",
         "defaultValue": ""
