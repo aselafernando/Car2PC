@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Car2PCSerial">
+        <file>SerialSettings.qml</file>
+      <file>icons/cd-100-white.png</file>
+    </qresource>
+</RCC>
