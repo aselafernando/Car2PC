@@ -1,10 +1,8 @@
 {
   "name":"Car2PCPlugin",
+  "label": "Car2PC Settings",
   "config": {
-    "label": "Car2PC Settings",
-    "name": "car2pc",
     "type": "loader",
-    "description": "",
     "iconImage": "qrc:/Car2PCSerial/icons/cd-100-white.png",
     "source": "qrc:/Car2PCSerial/SerialSettings.qml",
     "settings": [

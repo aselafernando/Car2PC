@@ -1,9 +1,10 @@
 import QtQuick 2.9
 import QtQuick.Controls 2.2
 import HUDTheme 1.0
-
+import HUDSettingsPage 1.0
 import QtQuick.Layouts 1.3
-Item {
+
+ThemeRoot {
     id:__root
 
     Flickable {
@@ -21,23 +22,16 @@ Item {
                 id: serial_port
                 width: parent.width
                 label: "Serial Port"
-                values: Car2PCPlugin.ports
+                values: pluginContext.ports
                 onValueChanged: {
-                    HUDSettings["Car2PCPlugin"].serial_port = value
+                    pluginSettings.serial_port = value
                 }
-                value : HUDSettings["Car2PCPlugin"].serial_port
+                value : pluginSettings.serial_port
             }
-
-			SettingsPageItemSwitch {
-                id: text
+            SettingsPageItemHeader{
                 width: parent.width
-                label: "Send Text"
-                onValueChanged: {
-                    HUDSettings["Car2PCPlugin"].text = value
-                }
-                value : HUDSettings["Car2PCPlugin"].text
             }
-
+            
         }
     }
 }

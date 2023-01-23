@@ -33,12 +33,14 @@ void Car2PCPlugin::eventMessage(QString id, QVariant message) {
         char timestamp[9];
         sprintf(timestamp, "TM%02d%02d%02d", hours, minutes % 60, seconds % 60);
         timestamp[8] = '\0';
+	qDebug() << "Car2PC Sending timestamp: " << timestamp;
         m_serialProtocol.sendMessage(8, timestamp);
     }
     else if (id == "MediaInput::trackNumber") {
         char track[6];
         sprintf(track, "TR%03d", message.toUInt());
         track[5] = '\0';
+	qDebug() << "Car2PC Sending track: " << track;
         m_serialProtocol.sendMessage(5, track);
     }
     //Need track name, time & number
